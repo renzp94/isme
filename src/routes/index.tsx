@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import LazyLoadSpin from '@/components/LazyLoadSpin'
+const Layout = lazy(() => import('@/layout/Layout'))
 const Home = lazy(() => import('@/pages/Home'))
 
 export default [
@@ -7,8 +8,18 @@ export default [
     path: '/',
     element: (
       <LazyLoadSpin>
-        <Home />
+        <Layout />
       </LazyLoadSpin>
     ),
+    children: [
+      {
+        index: true,
+        element: (
+          <LazyLoadSpin>
+            <Home />
+          </LazyLoadSpin>
+        ),
+      },
+    ],
   },
 ]

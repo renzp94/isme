@@ -5,7 +5,7 @@ const Home = () => {
     <div className="h-full flex items-center justify-center">
       <TypeIt
         options={{
-          strings: ['A: 你是谁?', 'Me: Is me. I am renzp94.'],
+          strings: ['A: 你是谁?', 'Me: Is me, renzp94.'],
         }}
       />
     </div>
