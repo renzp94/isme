@@ -1,5 +1,4 @@
 import type { ReactElement } from 'react'
-import { Suspense } from 'react'
 import Loading from './Loading'
 
 const LazyLoadSpin = ({ children }: { children: ReactElement }) => {
