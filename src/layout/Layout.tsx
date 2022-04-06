@@ -4,7 +4,7 @@ const Layout = () => {
   return (
     <section>
       <Header />
-      <main px="16" py="4">
+      <main className="px-6 lg:px-20 lg:(w-2/4 mx-auto)">
         <Outlet />
       </main>
     </section>
