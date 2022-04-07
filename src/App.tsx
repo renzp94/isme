@@ -1,10 +1,10 @@
 import Loading from './components/Loading'
 import routes from './routes'
-import { toggleDark } from './utils/tools'
+import { getCurrentDark, toggleDark } from './utils/tools'
 
 function App() {
   useEffect(() => {
-    const isDark = localStorage.getItem('isDark') === 'true'
+    const isDark = getCurrentDark()
     toggleDark(isDark)
   }, [])
   return <Suspense fallback={<Loading />}>{useRoutes(routes)}</Suspense>

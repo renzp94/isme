@@ -1,7 +1,8 @@
-import { toggleDark } from '@/utils/tools'
+import { getCurrentDark, toggleDark } from '@/utils/tools'
 
 const Header = () => {
-  const [isDark, setIsDark] = useState(localStorage.getItem('isDark') === 'true')
+  const dark = getCurrentDark()
+  const [isDark, setIsDark] = useState(dark)
 
   const onToggleDark = () => {
     toggleDark(!isDark)
