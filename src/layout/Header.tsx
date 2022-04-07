@@ -11,11 +11,11 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between w-full px-4 sticky top-0 bg-neutral-50 text-xs dark:bg-zinc-900 lg:px-1/4">
-      <Link to="/" className="relative h-12 flex items-center">
-        <span className="text-transparent text-2xl bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500  font-bold">
-          IsMe
-        </span>
-        <span className="absolute top-2 left-13 text-xs text-gray-400">renzp94</span>
+      <Link
+        to="/"
+        className="h-12 flex items-center text-transparent text-2xl bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500  font-bold"
+      >
+        IsMe
       </Link>
       <div className="flex items-center text-sm">
         <a
@@ -34,7 +34,7 @@ const Header = () => {
         </a>
         {isDark ? (
           <svg
-            className="inline-block text-base text-gray-400 ml-4 cursor-pointer"
+            className="inline-block text-base text-gray-400 hover:text-gray-900 dark:hover:text-white ml-4 cursor-pointer"
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ const Header = () => {
           </svg>
         ) : (
           <svg
-            className="inline-block text-base text-gray-400 ml-4 cursor-pointer"
+            className="inline-block text-base text-gray-400 hover:text-gray-900 dark:hover:text-white ml-4 cursor-pointer"
             width="1em"
             height="1em"
             viewBox="0 0 32 32"
