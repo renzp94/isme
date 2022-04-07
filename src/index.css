@@ -6,18 +6,14 @@ main {
   height: 100%;
 }
 
-.fireworks{
+_:default, .dark .fireworks{
   position: absolute;
   width: 150px;
   height: 150px;
   background: url('./assets/images/fireworks.png') no-repeat;
   background-size: auto 150px;
   background: #FFEFAD;
-
   animation: fireworks 2s steps(24) infinite, random 8s steps(1) infinite, randomColor 1s infinite;
-}
-
-_:default, .dark .fireworks{
   -webkit-mask: url('./assets/images/fireworks.png') no-repeat;
   -webkit-mask-size: auto 150px;
 }
