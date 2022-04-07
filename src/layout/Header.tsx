@@ -11,7 +11,7 @@ const Header = () => {
   }
 
   return (
-    <header className="flex items-center justify-between w-full px-6 sticky top-0 bg-zinc-50 text-xs lg:rounded-lg dark:bg-zinc-900">
+    <header className="flex items-center justify-between w-full px-6 sticky top-0 bg-zinc-50 text-xs lg:rounded-lg dark:bg-zinc-900 neu-card-mini">
       <Link
         to="/"
         className="h-12 flex items-center text-transparent text-2xl bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 font-bold"
