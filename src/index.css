@@ -11,8 +11,18 @@ main {
   border-radius: 15px;
   @apply bg-zinc-100 dark:bg-zinc-800 shadow-neu dark:shadow-neu-dark;
 }
+/* 拟物风卡片标题样式 */
+.neu-card-inset{
+  border-radius: 15px;
+  @apply bg-zinc-100 dark:bg-zinc-800 shadow-neu-inset dark:shadow-neu-inset-dark;
+}
 /* 拟物风小卡片样式 */
 .neu-card-mini{
   border-radius: 15px;
   @apply bg-zinc-100 dark:bg-zinc-800 shadow-neu-mini dark:shadow-neu-mini-dark;
+}
+/* 拟物风小卡片标题样式 */
+.neu-card-mini-inset{
+  border-radius: 15px;
+  @apply bg-zinc-100 dark:bg-zinc-800 shadow-neu-mini-inset dark:shadow-neu-mini-inset-dark;
 }

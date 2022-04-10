@@ -1,31 +1,35 @@
-import TypeIt from 'typeit'
+import EnuCard from '@/components/EnuCard'
+import UserCard from '@/components/UserCard'
 
 const Home = () => {
-  useEffect(() => {
-    const typeit = new (TypeIt as any)('.self-introduction', {
-      strings: [
-        '你好，我是renzp,',
-        '一个没有大梦想但心存小理想，',
-        '喜欢研究新潮技术的终身学习小文艺IT男。',
-        '溶于血液里的喜欢才叫做热爱，',
-        '期待与你相会，相知。',
-      ],
-    })
-    typeit.go()
-    setTimeout(() => typeit.destroy(), 12000)
-    return () => typeit.destroy()
-  }, [])
   return (
     <div>
       <div className="lg:flex">
-        <div className="p-6 h-245px w-[calc(w-full - mx-6)]  mx-6 neu-card-mini lg:(h-328px w-70 mx-0) ">
-          <h1 className="text-2xl font-bold mb-6 text-center">Renzp</h1>
-          <div className="self-introduction leading-7"></div>
-        </div>
-        <div className="p-6 neu-card-mini w-[w-full - mx-6] mt-6 mx-6 lg:(w-full mt-0 ml-8 mr-0)">
-          <h1 className="text-2xl font-bold mb-6 text-center">GitHub</h1>
-          <div className="self-introduction leading-8"></div>
-        </div>
+        <UserCard />
+        <EnuCard className=" w-[w-full - mx-6] mt-6 mx-6 lg:(w-full mt-0 ml-8 mr-0)" title="GitHub">
+          <div className="grid grid-cols-2 gap-x-12 gap-y-6">
+            <a href="https://github.com/renzp94/citc" target="_blank">
+              <EnuCard className="h-full" title="citc">
+                <div className="text-xs">一款基于Webpack5的React脚手架</div>
+              </EnuCard>
+            </a>
+            <a href="https://github.com/renzp94/build-info-webpack-plugin" target="_blank">
+              <EnuCard title="build-info-webpack-plugin">
+                <div className="text-xs">将打包信息注入客户端环境变量中的ebpack插件</div>
+              </EnuCard>
+            </a>
+            <a href="https://github.com/renzp94/codebook" target="_blank">
+              <EnuCard title="codebook">
+                <div className="text-xs">基于SevlteKit开发的博客</div>
+              </EnuCard>
+            </a>
+            <a href="https://github.com/renzp94/jsx-css-scoped-loader" target="_blank">
+              <EnuCard title="jsx-css-scoped-loader">
+                <div className="text-xs">在Jsx实现Css Scoped的webpack Loader</div>
+              </EnuCard>
+            </a>
+          </div>
+        </EnuCard>
       </div>
     </div>
   )
