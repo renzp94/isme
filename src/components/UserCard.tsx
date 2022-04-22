@@ -18,7 +18,7 @@ const UserCard = () => {
   }, [])
 
   return (
-    <EnuCard className="h-230px w-[calc(w-full - mx-6)]  mx-6 lg:(h-315px w-70 mx-0)" title="Renzp">
+    <EnuCard className="h-250px w-[calc(w-full - mx-6)]  mx-6 lg:(h-315px w-70 mx-0)" title="Renzp">
       <div className="self-introduction leading-7"></div>
     </EnuCard>
   )
